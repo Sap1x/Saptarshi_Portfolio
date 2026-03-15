@@ -1,0 +1,182 @@
+.accomplishments-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  margin: auto;
+  margin-bottom: 250px;
+  padding: 120px 0px;
+}
+
+.accomplishments-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.accomplishments-section h2>span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.accomplishments-info {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accomplishment-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: #14b8a6;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-icon {
+  margin-right: 15px;
+  font-size: 40px;
+  color: #5eead4;
+}
+
+.accomplishments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accomplishment-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px 35px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.accomplishment-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-image: linear-gradient(to top, #14b8a6, #5eead4);
+  transition: width 0.3s ease;
+}
+
+.accomplishment-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px -10px rgba(20, 184, 166, 0.3);
+}
+
+.accomplishment-box:hover::before {
+  width: 6px;
+}
+
+.accomplishment-box p {
+  color: #e2e8f0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.accomplishment-box strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.accomplishment-box em {
+  color: #14b8a6;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.accomplishment-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #5eead4;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+  font-weight: 500;
+}
+
+.accomplishment-link:hover {
+  color: #a5f3fc;
+  border-color: #a5f3fc;
+}
+
+@media only screen and (max-width: 1400px) {
+  .accomplishments-section h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .accomplishments-section {
+    padding: 70px 0px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .accomplishments-info {
+    width: 90%;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .section-icon {
+    font-size: 30px;
+  }
+  .accomplishment-box {
+    padding: 20px;
+  }
+  .accomplishment-box p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accomplishments-section h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .accomplishments-info {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .accomplishment-box {
+    padding: 20px 25px;
+  }
+}
