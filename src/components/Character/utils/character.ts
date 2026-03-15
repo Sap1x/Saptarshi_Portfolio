@@ -43,6 +43,7 @@ const setCharacter = (
                     newMat.color = new THREE.Color("#000000");
                     mesh.material = newMat;
                   } else if (mesh.name === "cap" || mesh.name === "Cap" || (mesh.name.toLowerCase().includes("cap") || mesh.name.toLowerCase().includes("hat"))) {
+                     console.log("Found hat mesh:", mesh.name);
                      // Google Noogler hat colors (Blue, Red, Yellow, Green)
                      const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
                      
