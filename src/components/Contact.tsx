@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/Saptarshi-Mondal"
+              href="https://github.com/Sap1x"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -28,7 +28,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/saptarshi-mondal"
+              href="https://www.linkedin.com/in/saptarshi-mondal-a4428b305/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtOu2D%2BXPTCSk%2FlyTi7QA1g%3D%3D"
               target="_blank"
               data-cursor="disable"
               className="contact-social"

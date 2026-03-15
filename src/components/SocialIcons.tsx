@@ -60,12 +60,12 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/Sap1x" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/saptarshi-mondal-a4428b305/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtOu2D%2BXPTCSk%2FlyTi7QA1g%3D%3D" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
@@ -75,7 +75,7 @@ const SocialIcons = () => {
           </a>
         </span>
         <span>
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/saptarshi787742/" target="_blank">
             <FaInstagram />
           </a>
         </span>
