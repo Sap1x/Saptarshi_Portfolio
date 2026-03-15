@@ -45,11 +45,15 @@ const setCharacter = (
                   } else if (mesh.name === "cap" || mesh.name === "Cap" || (mesh.name.toLowerCase().includes("cap") || mesh.name.toLowerCase().includes("hat"))) {
                      // Google Noogler hat colors (Blue, Red, Yellow, Green)
                      const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
+                     
                      if (mesh.name.toLowerCase().includes("brim") || mesh.name.toLowerCase().includes("visor")) {
                         newMat.color = new THREE.Color("#0F9D58"); // Green brim
-                     } else if (mesh.name.toLowerCase().includes("top")) {
+                     } else if (mesh.name.toLowerCase().includes("top") || mesh.name.toLowerCase().includes("propeller")) {
                         newMat.color = new THREE.Color("#DB4437"); // Red
+                     } else if (mesh.name.toLowerCase().includes("button") || mesh.name.toLowerCase().includes("base")) {
+                        newMat.color = new THREE.Color("#F4B400"); // Yellow
                      } else {
+                        // Default hat body
                         newMat.color = new THREE.Color("#4285F4"); // Blue base (Google Blue)
                      }
                      mesh.material = newMat;
